@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+
+  tiddlywiki:
+    image: tiddlywiki:latest
+    container_name: tiddlywiki
+    environment:
+        - USERNAME=user
+        - PASSWORD=wiki
+        - NODE_MEM=256
+    volumes:
+        - ./.tiddlywiki/:/var/lib/tiddlywiki/
+    ports:
+        - 8080:8080
