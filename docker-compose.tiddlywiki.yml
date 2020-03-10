@@ -1,8 +1,8 @@
-version: '2.1'
+version: '2.0'
 services:
 
   tiddlywiki:
-    image: tiddlywiki:latest
+    image: dosyoyas/tiddlywiki:latest
     container_name: tiddlywiki
     environment:
         - USERNAME=user
