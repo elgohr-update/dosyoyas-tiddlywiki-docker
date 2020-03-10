@@ -1,6 +1,5 @@
 FROM node:alpine
 
-USER node
 RUN npm install -g tiddlywiki@5.1.21
 
 # Setup wiki volume
